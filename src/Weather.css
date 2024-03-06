@@ -1,0 +1,45 @@
+.Weather {
+  border: 1px solid #b6b3b3;
+  color: #282828;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 50px 0 15px;
+}
+
+.Weather h1 {
+  margin: 20px 0 5px 0;
+}
+
+.Weather ul li {
+  list-style: none;
+}
+
+.Weather ul {
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+.Weather .current-weather {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Weather .current-temp {
+    display: flex;
+    align-items: center;
+}
+
+.Weather img {
+  width: 64px;
+}
+
+.Weather .temperature {
+  font-size: 52px;
+}
+
+.Weather .unit {
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
