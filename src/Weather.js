@@ -15,15 +15,14 @@ export default function Weather(props) {
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
       city: response.data.city,
-      iconUrl:
-        "https://duckduckgo.com/assets/weather/icons/weatherkit/MostlyClear.svg",
+      iconUrl: response.data.condition.icon_url,
       date: new Date(response.data.time * 1000),
     });
   }
 
   function searchCity() {
     let apiKey = `2cacbf3044aeb9a87b5a33at06fco72a`;
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
