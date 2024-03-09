@@ -9,15 +9,23 @@ export default function App() {
         <Weather defaultCity="Chicago" />
         <footer>
           <p>
-            This project was coded by{" "}
+            This project was coded by Hannah Van Wyk and is open-sourced on{" "}
             <a
               href="https://github.com/hannahvw/react-weather-app"
               target="_blank"
               rel="noreferrer"
             >
-              Hannah Van Wyk
+              GitHub
             </a>{" "}
-            and is open-sourced on GitHub.
+            and{" "}
+            <a
+              href="https://heroic-treacle-ce8911.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Netlify
+            </a>
+            .
           </p>
         </footer>
       </div>
